@@ -13,8 +13,8 @@ function! FindProjects()
         let l:temp_list = split(system('find ' . expand(dir) . ' -type d -name .git' ), '\n')
         for path in l:temp_list
             let l:path = split(expand(path), '/')
-            let l:path_string = join( PopItem(l:path, '-1'), '/')
-            call add( l:projects, expand(l:path_string) )
+            let l:path_string = join(  PopItem(l:path, '-1'), '/')
+            call add( l:projects, '/' . expand(l:path_string) )
         endfor
     endfor
     return l:projects
