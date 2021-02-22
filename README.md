@@ -15,7 +15,15 @@ let g:projects_cache = '~/.projects_cache'
 - `g:projects_dir` = list of paths to search in for git projects
 - `g:projects_cache` = specify custom location for project-cache file (holds only paths to dirs where an `.git` dir is found)
 
+## Installation 
 
+with plug:
+ 
+```
+Plug 'geljo/project-clip.vim'
+```
+
+Attention! This is not working on not `*nix` systems. There is still 1 system call which will be replaced in future
 
 
 ## TOOD's
