@@ -27,7 +27,7 @@ endfunction
 
 
 
-function GetProjects()
+function! GetProjects()
     if !empty( expand(glob(expand(g:projects_cache))) )
         return readfile(expand(g:projects_cache))
     else
