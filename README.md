@@ -3,6 +3,8 @@
 This plugin is still even before alpha
 Even the name might change in future!
 
+Depends on FZF!
+
 1. Run `:Projects`
 First run might take a bit longer until all git projects are found 
 2. Choose your project in fzf popup
@@ -29,7 +31,7 @@ with plug:
 Plug 'geljo/project-clip.vim'
 ```
 
-Attention! This is not working on not `*nix` systems. There is still 1 system call which will be replaced in future
+Attention! This is working only on `*nix` systems. There is still 1 system call which will be replaced in future
 
 
 ## TOOD's
