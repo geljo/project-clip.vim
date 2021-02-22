@@ -3,6 +3,12 @@
 This plugin is still even before alpha
 Even the name might change in future!
 
+1. Run `:Projects`
+First run might take a bit longer until all git projects are found 
+2. Choose your project in fzf popup
+3. Netrw is opening in chosen directory in a new tab
+4. change your current working directory with `<leader>cd`
+
 ## settings
 
 Currently only these 2 settings are available
@@ -30,7 +36,10 @@ Attention! This is not working on not `*nix` systems. There is still 1 system ca
 
 - [ ] add help text
 - [ ] add some error handling
-- [ ] add custom action to open :Explore on project enter?!?
+- [ ] add function to quickly switch projects
+- [ ] add autocommand to set cwd to your buffers path
+- [W] add custom action to open :Explore on project enter?!?
+    - opening `:Explore` for now
 - [ ] add ignore_list
 - [ ] make default behaviour configurable (:tabedit, :split, :vsplit, etc.)
 - [ ] make fzf window configurable
