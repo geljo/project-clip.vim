@@ -37,7 +37,10 @@ function GetProjects()
     endif
 endfunction
 
+nnoremap <leader>cd :cd %:p:h<CR>:pwd<CR>
+nnoremap <leader>pp Projects<CR>
+nnoremap <leader>pi ProjectsCacheRefresh<CR>
 
-
-command! Projects call fzf#run({'source': GetProjects() })
 command! ProjectsCacheRefresh call RefreshProjectsCache()
+command! Projects call fzf#run(fzf#wrap({'source': GetProjects(), 'sink': 'tabedit'}))
+
